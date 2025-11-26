@@ -26,11 +26,19 @@ public class Ejemplo01 {
     public static void main(String[] args) {
         int contador = 1;
         int suma = 0;
-        do {
+        String mensaje= "";
         
+        do {
+            suma = suma + 1;
+            mensaje = String.format("%s%d\n", mensaje, suma);
+            
             contador = contador + 1;
         } while (contador <= 10); 
-        System.out.printf("%d\n", suma);
+        mensaje  = String.format("%s\nLa suma es %d\n", mensaje, suma);
+        
+        System.out.printf("%s", mensaje);
+       
+                
     }
 
 }
