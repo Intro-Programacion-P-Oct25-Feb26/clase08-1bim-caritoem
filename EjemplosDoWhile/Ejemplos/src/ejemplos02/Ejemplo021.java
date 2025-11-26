@@ -16,7 +16,7 @@ import java.util.Scanner;
  *
  * @author reroes
  */
-public class Ejemplo02 {
+public class Ejemplo021 {
 
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
@@ -25,7 +25,6 @@ public class Ejemplo02 {
         double nota;
         boolean bandera = true;
         String salida;
-
         do {
             System.out.println("Ingrese calificación");
             nota = entrada.nextDouble();
@@ -34,10 +33,12 @@ public class Ejemplo02 {
 
             System.out.println("Ingrese (s, si, yes, y) si desea salir del ciclo ");
             salida = entrada.nextLine();
-            if (salida.equals("s") || salida.equals("si")
-                    || salida.equals("y")){
+        if (salida.equals ("s") ||(salida.equals ("si")|| 
+                   salida.equals ("yes")|| salida.equals ("y")){
             bandera = false;
-            }
+           
+        }
+
         } while (bandera); // (bandera==true)
 
         System.out.printf("Listado de Notas\n%s\n", cadenaFinal);
