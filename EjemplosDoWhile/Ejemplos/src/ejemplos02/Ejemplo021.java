@@ -25,6 +25,8 @@ public class Ejemplo021 {
         double nota;
         boolean bandera = true;
         String salida;
+        
+        
         do {
             System.out.println("Ingrese calificación");
             nota = entrada.nextDouble();
@@ -33,9 +35,19 @@ public class Ejemplo021 {
 
             System.out.println("Ingrese (s, si, yes, y) si desea salir del ciclo ");
             salida = entrada.nextLine();
-        if (salida.equals ("s") ||(salida.equals ("si")|| 
-                   salida.equals ("yes")|| salida.equals ("y")){
-            bandera = false;
+        switch(salida){
+            case("s"):
+            case("s1"):
+            case("yes"):
+            case ("y"):
+                bandera = false;
+                break;
+                
+                
+               
+                
+                
+                
            
         }
 
